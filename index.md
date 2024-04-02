@@ -2,8 +2,8 @@
 **This is bold**  
 # This is heading 1
 ## This is heading 2
-[Link] (https://www.wikipedia.org/)  
-![Image] (https://th.bing.com/th/id/OIP.6oaabB-mSdtUabj_XfJMcAHaGw?rs=1&pid=ImgDetMain)
+[(https://www.wikipedia.org/)]  
+![(https://th.bing.com/th/id/OIP.6oaabB-mSdtUabj_XfJMcAHaGw?rs=1&pid=ImgDetMain)]  
 > Blockquote  
 **Unordered List**
 * Item 1
