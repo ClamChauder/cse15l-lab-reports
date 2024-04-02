@@ -2,6 +2,6 @@
 ---  
 
 *cd without arguments*  
-`bchau@MSI MINGW64 ~ (main)  
-$ cd  
-`
+`bchau@MSI MINGW64 ~ (main)`  
+`$ cd`  
+`      `
