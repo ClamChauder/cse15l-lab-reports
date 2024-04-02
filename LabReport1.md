@@ -14,3 +14,7 @@ $ cd lecture1
 
 ```
 *Produces no output, but changes the cwd*
+
+bchau@MSI MINGW64 ~/lecture1 (main)
+$ cd Hello.java
+bash: cd: Hello.java: Not a directory
