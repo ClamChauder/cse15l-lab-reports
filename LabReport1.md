@@ -2,17 +2,33 @@
 ---  
 **The `cd` command:**  
 
-The following `pwd` command shows the absolute path to the working directory for the following `cd` command executions.
+Using `cd` without arguments  
+```
+bchau@MSI MINGW64 ~/lecture1 (main)
+$ cd
+
+bchau@MSI MINGW64 ~ (main)
+$ cd
+
+bchau@MSI MINGW64 ~ (main)
+$ cd
+
+```  
+Initially, the absolute path given by the `pwd` command was `/c/Users/bchau/lecture1`. After using the `cd` command, the 
+absolute path became `/c/Users/bchau`, and executing it again produced no change. The output
 bchau@MSI MINGW64 ~/lecture1 (main)
 $ pwd
 /c/Users/bchau/lecture1
 
-Using `cd` without arguments  
-```
-bchau@MSI MINGW64 ~ (main) 
+bchau@MSI MINGW64 ~/lecture1 (main)
 $ cd
 
-```
+bchau@MSI MINGW64 ~ (main)
+$ pwd
+/c/Users/bchau
+
+bchau@MSI MINGW64 ~ (main)
+$ cd
 Using `cd` with an argument  
 ```
 bchau@MSI MINGW64 ~ (main)
