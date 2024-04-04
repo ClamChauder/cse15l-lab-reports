@@ -2,7 +2,7 @@
 ---  
 **The `cd` command:**  
 As seen below, the initial absolute path given by the `pwd` command is `/c/Users/bchau/lecture1`. After using the `cd` command, the 
-absolute path became `/c/Users/bchau`, and executing it again produced no change to the absolute path. This indicates that the `cd` command without arguments changes the current directory to the home directory.
+absolute path became `/c/Users/bchau`, and executing it again produced no change to the absolute path which is not an error. This indicates that the `cd` command without arguments changes the current directory to the home directory.
 ```
 bchau@MSI MINGW64 ~/lecture1 (main)
 $ pwd
@@ -115,4 +115,4 @@ $ cat Hello.java
 cat: Hello.java: No such file or directory
 ```
 As seen above, using `cat` with a file as an argument will either indicate that the file does not exist in the current 
-working directory, or if it does, it will print the contents of the file. 
+working directory, or if it does, it will print the contents of the file. Both outputs are correct.
