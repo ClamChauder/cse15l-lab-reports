@@ -61,6 +61,21 @@ Hello.java
 ```
 **The `cat` command**
 ---
+With no arguments:
+Absolute paths: `/c/Users/bchau`, then `/c/Users/bchau/lecture1` after `cd`
+```
+bchau@MSI MINGW64 ~ (main)
+$ cat
+
+bchau@MSI MINGW64 ~ (main)
+$ cd lecture1
+
+bchau@MSI MINGW64 ~/lecture1 (main)
+$ cat
+
+```
+With no arguments, the `cat` command produces no output, and   .......................................................
+
 With a directory as an argument:  
 Absolute path: `/c/Users/bchau`
 ```
