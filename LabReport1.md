@@ -74,12 +74,11 @@ bchau@MSI MINGW64 ~/lecture1 (main)
 $ cat lecture1
 cat: lecture1: No such file or directory
 ```
-Using the `cat` command with a directory as an argument will indicate whether the argument directory exists inside the current working directory. The `lecture1` directory exists within the home directory, but not within itself, therefore the output makes sense and is not an error. 
-```
-bchau@MSI MINGW64 ~/lecture1 (main)
-$ ls
-Hello.java  messages/  README
+Using the `cat` command with a directory as an argument will indicate whether the argument directory exists inside the current working directory. The `lecture1` directory exists within the home directory, but not within itself, therefore the output makes sense and is not an error.  
 
+With a file as an argument:
+Absolute path: `/c/Users/bchau/lecture1`
+```
 bchau@MSI MINGW64 ~/lecture1 (main)
 $ cat Hello.java
 import java.io.IOException;
@@ -93,10 +92,12 @@ public class Hello {
     System.out.println(content);
   }
 }
-bchau@MSI MINGW64 ~/lecture1 (main)
-$ cd 
-
+```
+Absolute path: `/c/Users/bchau`
+```
 bchau@MSI MINGW64 ~ (main)
 $ cat Hello.java
 cat: Hello.java: No such file or directory
 ```
+As seen above, using `cat` with a file as an argument will either indicate that the file does not exist in the current 
+working directory, or if it does, it will print the contents of the file. 
