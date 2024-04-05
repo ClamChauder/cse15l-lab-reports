@@ -74,7 +74,8 @@ bchau@MSI MINGW64 ~/lecture1 (main)
 $ cat
 
 ```
-With no arguments, the `cat` command produces no output, and   .......................................................
+With no arguments, the `cat` command produces no output, which is not an error. "Concatenate," or `cat`, prints the contents of the argument(s),
+and since there is no argument in this case, it prints nothing.
 
 With a directory as an argument:  
 Absolute path: `/c/Users/bchau`
