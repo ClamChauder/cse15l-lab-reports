@@ -58,10 +58,9 @@ en-us.txt  es-mx.txt  zh-cn.txt
 bchau@MSI MINGW64 ~/lecture1 (main)
 $ ls Hello.java
 Hello.java
----
 ```
-**The `cat` command**
 ---
+**The `cat` command**  
 With no arguments:
 Absolute paths: `/c/Users/bchau`, then `/c/Users/bchau/lecture1` after `cd`
 ```
