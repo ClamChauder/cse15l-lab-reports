@@ -12,11 +12,15 @@ Reading through the code in `NumberServer.java`, we determined that the `handleR
   
 To run the server, I first compiled both files using the `javac` command. I then ran `java NumberServer 3001` which started the server on the port 3001. Below are the results from testing different paths and queries.
 
-Root path:
-
-Increment:
-
-Add:
-
-Error:
+Root path:  
+![Root path](/images/rootdir.png)  
+  
+Increment:  
+![Increment](/images/increment.png)  
+  
+Add:  
+![Add](/images/add.png)  
+  
+Error:  
+![Error](/images/error.png)  
 
