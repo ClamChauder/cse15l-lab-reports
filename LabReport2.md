@@ -4,13 +4,14 @@ Upon using `ssh` to login to the `ieng6` server, I got a message asking to confi
 
 ![Login](/images/sshlogin.png)
 
+---
 To start the lab, I exited the terminal using the `exit` command, and proceeded to `git clone https://github.com/ucsd-cse15l-s24/wavelet` in my local terminal. The two files in the repository were 
 `Server.java` which we were told would be explained in the future, and `NumberServer.java`, which manages a single number and uses `Server.java` to create a web server.  
   
 Reading through the code in `NumberServer.java`, we determined that the `handleRequest` method takes in a url as a parameter and modifies the web server accordingly. The first `if` statement argument (line 10) checks if there is a `path` or `query` after the `domain`, and if not, then it simply prints the value of the stored number. The next argument checks if the `path` is equal to "increment", increments the stored value by one if it is and prints that the value has been incremented. The last argument checks for the `add` path, splits the `query` that follows it into two string vectors, and checks if the first vector is valid and equals "count". If so, the stored value is increased by the number following the `=`, and the result is printed.
 ![Login](/images/numberserver.png)
   
-To run the server, I first compiled both files using the `javac` command. I then ran `java NumberServer 3001` which started the server on the port 3001. Below are the results from testing different paths and queries.
+To run the server, I first compiled both files using the `javac` command. I then ran `java NumberServer 3001` which started the server on the port `3001`. Below are the results from testing different paths and queries.
 
 Root path:  
 ![Root path](/images/rootdir.png)  
@@ -24,3 +25,8 @@ Add:
 Error:  
 ![Error](/images/error.png)  
 
+---
+To run the server on a remote computer, I used `ssh` to log back in to the `ieng6` server, then repeated the process of cloning the repository and compiling the two files in it. My lab partners did the same, and we were able to connect to each other's web servers. Any changes we made by adding or incrementing the value could be seen by everyone, which makes me think wthe number is stored in the 
+`num` variable on the `ieng6` server.
+
+A change I made to the `NumberServer.java` file on my local repository was to have it print my name whenever the root directory path was given. However, this change did not carry over to the repository on the `ieng6` server, because they are separate repositories. One thing that can be done, though, is to create a public github repository that others can edit and clone to the server.
