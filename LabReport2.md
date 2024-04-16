@@ -1,8 +1,10 @@
 # Lab Report 2 (Weeb 3)
 ---
+[Lab Instructions](https://clamchauder.github.io/cse15l-lab-reports/LabInstructions.html)
+---
 ## Part 1
 
-
+![Chat Server](/images/Lab2/chatserver.png)
 
 ---  
 ## Part 2
