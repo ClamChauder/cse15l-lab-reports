@@ -1,6 +1,5 @@
-# Lab Report 2 (Weeb 3)
----
-[Lab Instructions](https://clamchauder.github.io/cse15l-lab-reports/LabInstructions.html)
+# Lab Report 2 (Week 3)
+[LAB INSTRUCTIONS](https://clamchauder.github.io/cse15l-lab-reports/LabInstructions.html)
 
 ---
 
@@ -21,11 +20,16 @@ Examples of using `/add-message`:
 ---  
 ## Part 2
 
-Private key on local machine:  
+Private key on local machine:
+
 ![ls private](/images/Lab2/lsid.png)  
-Public key on remote machine:  
+Public key on remote machine:
+
 ![ls pub](/images/Lab2/lspub.png)  
-Logging in without password:  
+Logging in without password:
+
 ![No pass](/images/Lab2/nopwd.png)
 ---  
 ## Part 3
+
+I learned how to start my own local server, using the java command with a port in a local terminal as well as a remote one. You can display contents of a link to the terminal or save its contents to another file with the curl command.
