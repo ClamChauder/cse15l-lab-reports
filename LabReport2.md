@@ -11,12 +11,26 @@ Chat Server code:
 Examples of using `/add-message`:
 
 ![Add Jpolitz](/images/Lab2/addjpolitz.png)
-- The `handleRequest` method is called from `ChatServer.java`, the relevant arguments are `s` and `user`, and their values are `Hello` and `jpolitz` respectively.
-- 
-
+1) Relevant Methods and their Arguments:
+   - `handleRequest`: The relevant argument for this method is `url`, which takes on the value of `http://localhost:3001/add-message?s=Hello&user=jpolitz`.
+   - `main`: Takes in a string array `args` which takes the value of 3001.
+   - `handle`: The relevant argument is `exchange` which is an instance of the `HttpExchange` class.
+   - `start`: The relevant arguments are `port` and `handler` which are an integer (3001) and a URLHandler object respectively.
+   - `ServerHttpHandler`:  The relevant argument for this method is `handler`, which is a URLHandler object.  
+2) The  `str` variable inside the `Handler` class is empty at first, and then changes to contain `"jpolitz: Hello"`.
 
 ![Add Yash](/images/Lab2/addyash.png)
-
+1) Relevant Methods and their Arguments:
+   - `handleRequest`: The relevant argument for this method is `url`, which takes on the value of `http://localhost:3001/add-message?s=Hello&user=jpolitz`.
+   - `main`: Takes in a string array `args` which takes the value of 3001.
+   - `handle`: The relevant argument is `exchange` which is an instance of the `HttpExchange` class.
+   - `start`: The relevant arguments are `port` and `handler` which are an integer (3001) and a URLHandler object respectively.
+   - `ServerHttpHandler`:  The relevant argument for this method is `handler`, which is a URLHandler object.  
+2) The  `str` variable initially contains `"jpolitz: Hello"`, and after the request it contains
+```
+jpolitz: Hello
+yash: How are you
+```
 ---  
 ## Part 2
 
