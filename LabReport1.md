@@ -23,8 +23,8 @@ $ pwd
 /c/Users/bchau
 ```  
 Below, the initial absolute path is the home directory, and after using `cd lecture1` it changes to `/c/Users/bchau/lecture1`. 
-From there, trying to `cd` to the file `Hello.java` yields the output `bash: cd: Hello.java: Not a directory`. This is not an error, because `cd` stands for 
-"change directory," and a file is not a directory.
+From there, trying to `cd` to the file `Hello.java` yields the output `bash: cd: Hello.java: Not a directory`. This is an error because `cd` stands for 
+"change directory," and `Hello.java` is a file is not a directory, therefore it is not a valid argument.
 ```
 bchau@MSI MINGW64 ~ (main)
 $ pwd
@@ -90,7 +90,7 @@ bchau@MSI MINGW64 ~/lecture1 (main)
 $ cat lecture1
 cat: lecture1: No such file or directory
 ```
-Using the `cat` command with a directory as an argument will indicate whether the argument directory exists inside the current working directory. The `lecture1` directory exists within the home directory, but not within itself, therefore the output makes sense and is not an error.  
+Using the `cat` command with a directory as an argument will indicate whether the argument directory exists inside the current working directory. The `lecture1` directory exists within the home directory, but not within itself, therefore using `cat lecture1` while inside the `lecture1` directory yields an error.  
 
 With a file as an argument:
 Absolute path: `/c/Users/bchau/lecture1`
@@ -116,4 +116,4 @@ $ cat Hello.java
 cat: Hello.java: No such file or directory
 ```
 As seen above, using `cat` with a file as an argument will either indicate that the file does not exist in the current 
-working directory, or if it does, it will print the contents of the file. Both outputs are correct.
+working directory, or if it does, it will print the contents of the file. Using `cat Hello.java` yields an error because the `Hello.java` file does not exist within the home directory.
