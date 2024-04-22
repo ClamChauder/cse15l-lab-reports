@@ -17,11 +17,14 @@ Examples of using `/add-message`:
    - `handle`: The relevant argument is `exchange` which is an instance of the `HttpExchange` class.
    - `start`: The relevant arguments are `port` and `handler` which are an integer (3001) and a URLHandler object respectively.
    - `ServerHttpHandler`:  The relevant argument for this method is `handler`, which is a URLHandler object.  
-2) The  `str` variable inside the `Handler` class is empty at first, and then changes to contain `"jpolitz: Hello"`.
+2) The  `str` variable inside the `Handler` class is empty at first, and then changes to contain
+```
+jpolitz: Hello
+```
 
 ![Add Yash](/images/Lab2/addyash.png)
 1) Relevant Methods and their Arguments:
-   - `handleRequest`: The relevant argument for this method is `url`, which takes on the value of `http://localhost:3001/add-message?s=Hello&user=jpolitz`.
+   - `handleRequest`: The relevant argument for this method is `url`, which takes on the value of `http://localhost:3001/add-message?s=How are you&user=yash`.
    - `main`: Takes in a string array `args` which takes the value of 3001.
    - `handle`: The relevant argument is `exchange` which is an instance of the `HttpExchange` class.
    - `start`: The relevant arguments are `port` and `handler` which are an integer (3001) and a URLHandler object respectively.
