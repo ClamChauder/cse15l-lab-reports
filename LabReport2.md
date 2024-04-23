@@ -10,7 +10,7 @@ Chat Server code:
 
 Examples of using `/add-message`:
 
-![Add Jpolitz](/images/Lab2/addjpolitz.png)
+![Add Jpolitz](/images/Lab2/addjpolitz.png)  
 1) Relevant Methods and their Arguments:
    - `handleRequest`: The relevant argument for this method is `url`, which takes on the value of `http://localhost:3001/add-message?s=Hello&user=jpolitz`.
    - `main`: Takes in a string array `args` which takes the value of 3001.
@@ -22,7 +22,7 @@ Examples of using `/add-message`:
 jpolitz: Hello
 ```
 
-![Add Yash](/images/Lab2/addyash.png)
+![Add Yash](/images/Lab2/addyash.png)  
 1) Similar Relevant Methods and their Arguments:
    - `handleRequest`: The relevant argument for this method is `url`, which takes on a different value of `http://localhost:3001/add-message?s=How%20are%20you&user=yash`.
    - `main`: Takes in a string array `args` which takes the value of 3001.
