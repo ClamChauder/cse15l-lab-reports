@@ -17,7 +17,7 @@ Examples of using `/add-message`:
    - `handle`: The relevant argument is `exchange` which is an instance of the `HttpExchange` class.
    - `start`: The relevant arguments are `port` and `handler` which are an integer (3001) and a URLHandler object respectively.
    - `ServerHttpHandler`:  The relevant argument for this method is `handler`, which is a URLHandler object.  
-2) The string variable `str` variable inside the `Handler` class is empty at first, and then changes to contain
+2) The string variable `str` inside the `Handler` class is empty at first, and then changes to contain
 ```
 jpolitz: Hello
 ```
@@ -29,7 +29,7 @@ jpolitz: Hello
    - `handle`: The relevant argument is `exchange` which is an instance of the `HttpExchange` class.
    - `start`: The relevant arguments are `port` and `handler` which are an integer (3001) and a URLHandler object respectively.
    - `ServerHttpHandler`:  The relevant argument for this method is `handler`, which is a URLHandler object.  
-2) The strnig variable `str` variable initially contains `"jpolitz: Hello"`, and after the request it contains
+2) The string variable `str` initially contains `"jpolitz: Hello"`, and after the request it contains
 ```
 jpolitz: Hello
 yash: How are you
@@ -52,5 +52,5 @@ Things I learned in weeks 2 and 3:
 - I learned how to host a web server on local and remote terminals using the `java` command with a port.
 - Using the `curl` command, you can display contents of a link to the terminal or save its contents to another file.
 - I learned how to generate public and private keys using `ssh-keygen`and how to configure it in a remote server to not require a password when using `ssh` to connect to that server.
-- Using the `echo` command, you can create a new file with text inside.
-- Using the `scp` command, you can copy files and directories between two locations.
+- Using the `echo` command, you can create a new file with text inside. For example, to create a file named `hello.txt` with the words "Hello World" inside, you can use `echo Hello World > hello.txt`.
+- Using the `scp` command, you can copy files and directories between two locations. If i wanted to copy the `hello.txt` file that was just created on my local machine to the remote server, I could use `scp hello.txt bpchau@ieng6.ucsd.edu:~/`
