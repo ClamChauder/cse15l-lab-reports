@@ -75,7 +75,7 @@ $ cat
 
 ```
 With no arguments, the `cat` command produces no output, which is not an error. "Concatenate," or `cat`, prints the contents of the argument(s),
-and since there is no argument in this case, it prints nothing.
+and since there is no argument in this case, it prints nothing. However, aftering using `cat` with no arguments, the terminal still allows the user to write in it, and after pressing `enter`, it will print out the exact content that was entered in.
 
 With a directory as an argument:  
 Absolute path: `/c/Users/bchau`
@@ -116,4 +116,4 @@ $ cat Hello.java
 cat: Hello.java: No such file or directory
 ```
 As seen above, using `cat` with a file as an argument will either indicate that the file does not exist in the current 
-working directory, or if it does, it will print the contents of the file. Using `cat Hello.java` yields an error because the `Hello.java` file does not exist within the home directory.
+working directory, or if it does, it will print the contents of the file. Using `cat Hello.java` yields an error because the `Hello.java` file does not exist within the home directory, but it exists within the `lecture1` directory which is why the file contents are displayed instead of an error message.
