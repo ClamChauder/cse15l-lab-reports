@@ -63,7 +63,9 @@ static double averageWithoutLowest(double[] arr) {
 
 ## Part 2
 
-The default `grep` command takes in two arguments-a string and a file path-and returns any instances of that string within the file. There are also variations of this command that have different behaviors and return different outputs, such as `grep -w`, `grep -r`, `grep -c`, and `grep -l`, to name a few. The mentioned variants are discussed below.
+The default `grep` command takes in two arguments-a string and a file path-and returns any instances of that string within the file. There are also variations of this command that have different behaviors and return different outputs, such as `grep -w`, `grep -r`, `grep -c`, and `grep -l`, to name a few. The mentioned variants are discussed below, and I used the following website as a reference.  
+![https://quickref.me/grep](https://quickref.me/grep)
+![Image](images/Lab3/reference.png)
 
 `grep -w`
 The 'w' stands for "word", and using this variation will return any instances of the whole word within the file, excluding any words that may include this string as a substring. As you can see below, "attain" and "attainment" yield different results, even though one is a substring of the other. It could be useful for situations in which you are looking for a certain bit of information, but only remember a few key words.  
@@ -174,3 +176,4 @@ $ grep -l "attainment of" technical/plos/*.txt
 technical/plos/pmed.0020016.txt
 ```
 
+For these 
