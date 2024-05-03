@@ -64,7 +64,7 @@ static double averageWithoutLowest(double[] arr) {
 ## Part 2
 
 The default `grep` command takes in two arguments-a string and a file path-and returns any instances of that string within the file. There are also variations of this command that have different behaviors and return different outputs, such as `grep -w`, `grep -r`, `grep -c`, and `grep -l`, to name a few. The mentioned variants are discussed below, and I used the following website as a reference.  
-![https://quickref.me/grep](https://quickref.me/grep)
+[Reference](https://quickref.me/grep)
 ![Image](images/Lab3/reference.png)
 
 `grep -w`
