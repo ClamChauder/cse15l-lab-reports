@@ -1,7 +1,7 @@
 ## Lab Report 3 - Bugs and Commands (Week 5)
 ---
 ## Part 1
-The bug I chose to investigate for this lab is the `averageWithoutLowest` method, that is supposed to take an array and calculate the average of its elements while excluding the lowest value. However, the provided code failed to account for arrays that contain multiple instances of the lowest value.
+The bug I chose to investigate for this lab is the `averageWithoutLowest` method, that is supposed to take an array and calculate the average of its elements while excluding the lowest value. However, the provided code fails to account for arrays that contain multiple instances of the lowest value.
 1. Failure-Inducing Input:
 ```
 @Test
@@ -60,7 +60,7 @@ static double averageWithoutLowest(double[] arr) {
 ---
 ## Part 2
 
-The default grep command takes in two arguments-a string and a file path-and returns any instances of that string within the file. There are also variations of this command that have different behaviors and return different outputs, such as `grep -w`, `grep -r`, `grep -c`, and `grep -l`, to name a few. The mentioned variants are discussed below.
+The default `grep` command takes in two arguments-a string and a file path-and returns any instances of that string within the file. There are also variations of this command that have different behaviors and return different outputs, such as `grep -w`, `grep -r`, `grep -c`, and `grep -l`, to name a few. The mentioned variants are discussed below.
 
 `grep -w`
 The 'w' stands for "word", and using this variation will return any instances of the whole word within the file, excluding any words that may include this string as a substring. As you can see below, "attain" and "attainment" yield different results, even though one is a substring of the other. It could be useful for situations in which you are looking for a certain bit of information, but only remember a few key words.  
