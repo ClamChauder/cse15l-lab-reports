@@ -1,5 +1,65 @@
 ## Lab Report 3 - Bugs and Commands (Week 5)
 ---
+## Part 1
+The bug I chose to investigate for this lab is the `averageWithoutLowest` method, that is supposed to take an array and calculate the average of its elements while excluding the lowest value. However, the provided code failed to account for arrays that contain multiple instances of the lowest value.
+1. Failure-Inducing Input:
+```
+@Test
+  public void testfail() {
+    double[] input1= {2, 2, 4, 3, 7};
+    assertEquals((16.0/4.0), ArrayExamples.averageWithoutLowest(input1), 0.11);
+  }
+```
+2. Input that does not induce failure:
+```
+@Test
+  public void notfail() {
+    double[] input1= {1, 2, 3, 4, 5};
+    assertEquals((14.0/4.0), ArrayExamples.averageWithoutLowest(input1), 0.11);
+  }
+```
+3. Symptom:  
+![Symptom](images/Lab3/symptom.png)
+ 
+5. The bug:
+
+Before
+```
+static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
+    double sum = 0;
+    for(double num: arr) {
+      if(num != lowest) { sum += num; }
+    }
+    return sum / (arr.length - 1);
+  }
+```
+After
+```
+static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
+    double sum = 0;
+    int i = 0;
+    for(double num: arr) {
+      if(num != lowest) { sum += num; }
+      else if (num == lowest && i == 0) { i++; }
+      else { sum += num; }
+    }
+    return sum / (arr.length - 1);
+  }
+```
+
+5. 
+
+---
 ## Part 2
 
 The default grep command takes in two arguments-a string and a file path-and returns any instances of that string within the file. There are also variations of this command that have different behaviors and return different outputs, such as `grep -w`, `grep -r`, `grep -c`, and `grep -l`, to name a few. The mentioned variants are discussed below.
