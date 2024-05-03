@@ -4,6 +4,11 @@
 The default grep command takes in two arguments-a string and a file name-and returns any instances of that string within the file. There are also variations of this command that have different behaviors and return different outputs, such as `grep -w`, `grep -r`, `grep -l`, and `grep -c`, to name a few. The mentioned variants are discussed below.
 
 `grep -w`
-The 'w' stands for "word, and using this variation will return any instances of the whole word within the file, excluding any words that may include this string as a substring. It could be useful for situations in which you are looking for a certain bit of information, but can't remember anything about it except for a few words
+The 'w' stands for "word", and using this variation will return any instances of the whole word within the file, excluding any words that may include this string as a substring. As you can see below, "attain" and "attainment" yield different results, even though one is a substring of the other. It could be useful for situations in which you are looking for a certain bit of information, but only remember a few key words.  
+![Grep -r](images/Lab3/grepw.png)  
 
-![Grep -r](images/Lab3/grepw.png)
+`grep -r`
+The 'r' stands for "recursive", and unlike other variations of `grep`, `grep -r` allows for the second argument to be a directory or a file name. If it is a directory it will be recursively searched through, meaning all subdirectories and their files will be searched for the given substring, and their paths will be returned. Providing a file name will return any instances of that substring within the given file. This could be useful if you are looking for particular bits data that may be spread among a large folder tree, as it will save a lot of time.
+![Grep -r](images/Lab3/grepr.png)
+
+`grep -l`
