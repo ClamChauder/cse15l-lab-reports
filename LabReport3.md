@@ -56,8 +56,11 @@ static double averageWithoutLowest(double[] arr) {
     return sum / (arr.length - 1);
   }
 ```
+  
 5. This fix addresses the issue because it includes a variable to account for how many times the lowest value has been excluded. If it has already been excluded once, then the variable will be incremented and prevent another instance from being excluded.
+  
 ---
+
 ## Part 2
 
 The default `grep` command takes in two arguments-a string and a file path-and returns any instances of that string within the file. There are also variations of this command that have different behaviors and return different outputs, such as `grep -w`, `grep -r`, `grep -c`, and `grep -l`, to name a few. The mentioned variants are discussed below.
