@@ -56,9 +56,7 @@ static double averageWithoutLowest(double[] arr) {
     return sum / (arr.length - 1);
   }
 ```
-
-5. 
-
+5. This fix addresses the issue because it includes a variable to account for how many times the lowest value has been excluded. If it has already been excluded once, then the variable will be incremented and prevent another instance from being excluded.
 ---
 ## Part 2
 
