@@ -175,5 +175,3 @@ bchau@MSI MINGW64 ~/Desktop/cse15l/Lab4w5/docsearch (main)
 $ grep -l "attainment of" technical/plos/*.txt
 technical/plos/pmed.0020016.txt
 ```
-
-For these 
